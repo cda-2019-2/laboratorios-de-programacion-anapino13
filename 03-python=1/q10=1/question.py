@@ -18,4 +18,10 @@
 ##  >>> Escriba su codigo a partir de este punto <<<
 ##
 
+data= open('data.csv', 'r').readlines()
+data = [row[0:-1] for row in data]
+data = [x.split('\t') for x in data]
 
+columna = [[c[0], c[3], c[4]] for c in data]
+for f in columna:
+  print(f[0]+','+str(len(f[1].split(',')))+','+str(len(f[2].split(','))))

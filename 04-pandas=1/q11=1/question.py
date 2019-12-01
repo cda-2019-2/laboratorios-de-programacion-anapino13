@@ -18,5 +18,26 @@
 ##  >>> Escriba su codigo a partir de este punto <<<
 ##
 
+import pandas as pd
+import numpy as np
+pd.set_option('display.notebook_repr_html', False)
 
+
+tabla2 =  pd.read_csv(
+    "tbl2.tsv",
+    sep = '\t',         # separador de campos
+    thousands = None,  # separador de miles para números
+    decimal = '.')
+
+tabla2= tabla2.groupby('_c0').sum()
+
+tabla0 =  pd.read_csv(
+    "tbl0.tsv",
+    sep = '\t',         # separador de campos
+    thousands = None,  # separador de miles para números
+    decimal = '.')
+
+tabla0["_c5b"] = tabla2["_c5b"]
+tabla0 = tabla0.groupby('_c1')['_c5b'].sum()
+print(tabla0)
 

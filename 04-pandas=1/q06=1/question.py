@@ -14,3 +14,16 @@
 ##
 ##  >>> Escriba su codigo a partir de este punto <<<
 ##
+
+import pandas as pd
+import numpy as np
+pd.set_option('display.notebook_repr_html', False)
+
+tabla0 =  pd.read_csv(
+    "tbl0.tsv",
+    sep = '\t',         # separador de campos
+    thousands = None,  # separador de miles para números
+    decimal = '.')
+    
+tabla0["suma"] = tabla0["_c0"] + tabla0["_c2"]
+print(tabla0)

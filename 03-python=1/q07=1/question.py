@@ -22,3 +22,24 @@
 ##  >>> Escriba su codigo a partir de este punto <<<
 ##
 
+data= open('data.csv', 'r').readlines()
+data = [row[0:-1] for row in data]
+data = [x.split('\t') for x in data]
+
+listanum = []
+
+for i in data:
+
+  encontrado = 0
+  for r in listanum :
+    if r == i[1]:
+      encontrado = 1
+  if encontrado == 0:
+    listanum.append(i[1])
+    
+for i in sorted(listanum):
+  listalet = []
+  for r in data:
+    if i == r[1]:
+      listalet.append(r[0])
+  print((i,listalet))

@@ -23,3 +23,15 @@
 ##
 ##  >>> Escriba su codigo a partir de este punto <<<
 ##
+awk '{print FILENAME","$0}' data1.csv | sed "s/\t/,/g" |sed '/^$/d' | awk '{printf "%s,%s\n", NR,$1}' > 1.txt
+awk '{print FILENAME","$0}' data2.csv| sed "s/\t/,/g" | sed '/^$/d'| sed "s/ /,/g"| sed "s/ //g"| sed '1d'|awk '{printf "%s,%s\n", NR,$1}' >> 1.txt
+awk '{print FILENAME","$0}' data3.csv | sed "s/\t/,/g" | awk '{printf "%s,%s\n", NR,$1}' >> 1.txt
+awk 'BEGIN{FS=OFS=","} {t=$1; $1=$2; $2=t; print} ' 1.txt > 2.txt
+for f in 2.txt
+do
+awk -F "," '{for(i=4;i<=NF;i++) print $1,$2,$3,$i}' OFS="," $f
+done > 3.txt
+
+sed '14d' 3.txt | sed '14d' > resultado.csv
+rm *.txt
+cat resultado.csv

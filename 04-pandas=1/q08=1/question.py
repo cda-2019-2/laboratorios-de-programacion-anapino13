@@ -16,4 +16,22 @@
 ## 
 ##  >>> Escriba su codigo a partir de este punto <<<
 ##
+import pandas as pd
+import numpy as np
+pd.set_option('display.notebook_repr_html', False)
 
+tabla0 =  pd.read_csv(
+    "tbl0.tsv",
+    sep = '\t',         # separador de campos
+    thousands = None,  # separador de miles para números
+    decimal = '.')
+
+tabla0 = tabla0[['_c1','_c2']]
+tabla0 = tabla0.groupby('_c1',as_index = False).agg(lambda x: x.sort_values().tolist())
+tabla0['_c2'] = tabla0['_c2'].astype(str)
+tabla0['_c2'] = tabla0['_c2'].str.replace(", ",":")
+tabla0['_c2'] = tabla0['_c2'].str.replace("[","")
+tabla0['_c2'] = tabla0['_c2'].str.replace("]","")
+tabla0.rename(columns=lambda x: x.replace('_c2', 'lista'), inplace=True)
+tabla0.rename(columns=lambda x: x.replace('_c1', '_c0'), inplace=True)
+print(tabla0)

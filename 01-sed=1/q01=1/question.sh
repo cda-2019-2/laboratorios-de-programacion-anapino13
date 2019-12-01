@@ -35,3 +35,16 @@
 ##
 ##  >>> Escriba su codigo a partir de este punto <<<
 ##
+
+
+sed 's/\/\([0-9][0-9]\);/\/20\1;/' data.csv > 1.txt
+sed 's/\/\([0-9]\)\//\/0\1\//' 1.txt > 2.txt
+sed 's/^\([0-9]\)\//0\1\//' 2.txt > 3.txt
+sed 's/\(^[0-9][0-9]\)\/\([0-9][0-9]\)\/\([0-9][0-9][0-9][0-9]\);/\3-\2-\1;/' 3.txt > 4.txt
+sed -e 's/\(.*\)/\U\1/' 4.txt > 5.txt
+sed 's/,/./g' 5.txt | sed 's/;/,/g' > 6.txt
+sed 's/,,/,\\N,/' 6.txt | sed 's/,N/,\\N/' > 7.txt
+sed 's/,.$/,\\N/' 7.txt > 8.txt
+sed "s/,,/,\N,/g; s/^,/,\N,/g; s/,$/,\\\N/g" 8.txt | sed "s/,,/,\N,/" >  resultado
+rm *.txt
+cat resultado
