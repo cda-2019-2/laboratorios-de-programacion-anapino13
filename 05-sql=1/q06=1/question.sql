@@ -46,3 +46,4 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
+SELECT * FROM tbl1 WHERE K0 LIKE 'A' ORDER BY C14;

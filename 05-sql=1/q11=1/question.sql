@@ -41,3 +41,4 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
+SELECT strftime('%Y',c14) as YEAR,COUNT(strftime('%Y',c14)) AS CANT FROM tbl1 WHERE strftime('%Y',c14) LIKE '2018%' GROUP BY strftime('%Y',c14);

@@ -45,3 +45,4 @@
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
 
+SELECT * FROM tbl0 WHERE c02 LIKE '100' OR c02 LIKE '600';

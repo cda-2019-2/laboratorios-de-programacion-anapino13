@@ -47,3 +47,4 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
+SELECT K0,c16 FROM tbl1 WHERE C16 LIKE K0 || '%';
