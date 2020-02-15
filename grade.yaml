@@ -1,69 +1,189 @@
-_grade: 2.92
+_grade: 4.92
 _score: 100
-date: '2019-12-01 23:28:23.795791'
+date: '2020-02-15 15:29:46.429549'
 tree:
   00-hola_mundo=0/:
     _grade: 0.0
     _score: 0
     tree:
-      q01=1/: {_grade: 0.0, _score: 1, tree: 0.0}
+      q01=1/:
+        _grade: 0.0
+        _score: 1
+        tree: 0.0
   01-sed=1/:
     _grade: 5.0
     _score: 1
     tree:
-      q01=1/: {_grade: 5.0, _score: 1, tree: 5.0}
+      q01=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
   02-bash=1/:
     _grade: 5.0
     _score: 1
     tree:
-      q01=1/: {_grade: 5.0, _score: 1, tree: 5.0}
+      q01=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
   03-python=1/:
     _grade: 4.58
     _score: 1
     tree:
-      q01=1/: {_grade: 5.0, _score: 1, tree: 5.0}
-      q02=1/: {_grade: 5.0, _score: 1, tree: 5.0}
-      q03=1/: {_grade: 5.0, _score: 1, tree: 5.0}
-      q04=1/: {_grade: 5.0, _score: 1, tree: 5.0}
-      q05=1/: {_grade: 5.0, _score: 1, tree: 5.0}
-      q06=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q07=1/: {_grade: 5.0, _score: 1, tree: 5.0}
-      q08=1/: {_grade: 5.0, _score: 1, tree: 5.0}
-      q09=1/: {_grade: 5.0, _score: 1, tree: 5.0}
-      q10=1/: {_grade: 5.0, _score: 1, tree: 5.0}
-      q11=1/: {_grade: 5.0, _score: 1, tree: 5.0}
-      q12=1/: {_grade: 5.0, _score: 1, tree: 5.0}
+      q01=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q02=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q03=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q04=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q05=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q06=1/:
+        _grade: 0.0
+        _score: 1
+        tree: 0.0
+      q07=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q08=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q09=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q10=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q11=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q12=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
   04-pandas=1/:
-    _grade: 0.0
+    _grade: 5.0
     _score: 1
     tree:
-      q01=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q02=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q03=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q04=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q05=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q06=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q07=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q08=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q09=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q10=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q11=1/: {_grade: 0.0, _score: 1, tree: 0.0}
+      q01=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q02=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q03=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q04=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q05=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q06=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q07=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q08=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q09=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q10=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q11=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
   05-sql=1/:
-    _grade: 0.0
+    _grade: 5.0
     _score: 1
     tree:
-      q01=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q02=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q03=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q04=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q05=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q06=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q07=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q08=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q09=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q10=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q11=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q12=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q13=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-      q14=1/: {_grade: 0.0, _score: 1, tree: 0.0}
-2019-12-01 23:28:24.376775
+      q01=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q02=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q03=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q04=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q05=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q06=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q07=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q08=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q09=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q10=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q11=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q12=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q13=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+      q14=1/:
+        _grade: 5.0
+        _score: 1
+        tree: 5.0
+2020-02-15 15:29:46.566840
